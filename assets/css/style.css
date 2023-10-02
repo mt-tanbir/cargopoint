@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Syne", sans-serif;
+    color: #2f2d53;
+}
+
+/* Header Section Start */
+
+
+.header-1 {
+    border-bottom: 1px solid var(--gray-300, #E8E7E6);
+    background: #FFF;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--primary-900, #FF5042);
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-hover-bg: #FF5042;
+}
+
+.search-btn {
+    background: var(--primary-900, #FF5042);
+    border-radius: 50px;
+    width: 40px;
+    height: 38px;
+}
+
+.nav-link{
+    color: var(--gray-900, #140A09);
+        font-family: Syne;
+        font-size: 20px;
+        font-weight: 600;
+}
