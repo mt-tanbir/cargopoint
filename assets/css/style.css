@@ -9,6 +9,19 @@ body {
     scroll-behavior: smooth;
 }
 
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-top {
+    padding-top: 100px;
+}
+
+.section-bottom {
+    padding-bottom: 100px;
+}
+
 h1,
 h2,
 h3,
@@ -19,13 +32,53 @@ h6 {
     color: #2f2d53;
 }
 
-.btn-orange {
-    background: var(--primary-900, #FF5042);
+.section-title{
+color: var(--gray-900, #140A09);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0.72px;
 }
 
+p {
+    color: #433b3a;
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.btn-orange {
+    color: #ffffff;
+    background-color: #ff5b2e;
+    border: 1px solid #ff5b2e;
+}
+
+.btn-orange:hover {
+    color: #ffffff;
+    background-color: #ff5b2e;
+    border: 1px solid #ff5b2e;
+}
+
+.btn-light {
+    color: #ff5b2e;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-light:hover {
+    color: #ff5b2e;
+    border: 1px solid #fff;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+
 /* Header Section Start */
-
-
 .header-1 {
     border-bottom: 1px solid var(--gray-300, #E8E7E6);
     background: #FFF;
@@ -59,6 +112,118 @@ h6 {
 
 
 /* Hero Section Start */
+.hero-1 img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
 
+.hero-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 575px;
+    gap: 40px;
+    padding: 0 16%;
+}
+
+.hero-content h2 {
+    color: var(--gray-white, #FFF);
+    text-align: center;
+    font-family: Syne;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0.9px;
+}
 
 /* Hero Section End */
+
+
+
+/* Truck Trace Section Start */
+.truck-trace {
+    margin-top: -110px;
+    position: relative;
+    z-index: 4;
+}
+
+.truck-trace .trace-wrapper {
+    background: #fff;
+    border: 1px solid #fff6f6;
+    box-shadow: 0px 12px 60px 0px rgba(44, 25, 23, 0.04);
+    position: relative;
+}
+
+.truck-trace .trace-wrapper::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #f3f3f3;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+
+.truck-trace .trace-wrapper .single-trace-box {
+    padding: 50px 70px;
+    background: #fff;
+}
+
+.single-trace-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.single-trace-box input {
+    padding: 22px 33px;
+    border: 1px solid var(--primary-300, #FFEEEC);
+    background: var(--primary-200, #FFF6F6);
+}
+
+.single-trace-box .btn {
+    padding: 21px;
+    width: 28%;
+    position: relative;
+    right: 4px;
+    top: -1px;
+}
+
+/* Truck Trace Section End */
+
+
+
+/* Services Section Start */
+.single-services {
+    border-top: 1px solid var(--primary-200, #FFF6F6);
+    background: #FFF;
+    box-shadow: 0px 12px 60px 0px rgba(44, 25, 23, 0.04);
+    padding: 30px;
+}
+
+.single-services .services-img-box {
+    width: 72px;
+    height: 72px;
+    background: #FFF6F6;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+}
+
+.single-services h3{
+    margin-top: 10px;
+}
+
+/* Services Section End */
+
+
+
+/* Trusted Section Start */
+
+/* Trusted Section End */
