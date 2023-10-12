@@ -379,21 +379,15 @@ p {
 /* Team-Section End */
 
 /* Client Section Start */
-.client-area .section-top-title {
-    padding-bottom: 30px;
-}
-
 .client-area {
     background: var(--primary-200, #FFF6F6);
     padding-bottom: 50px;
 }
 
-.carousel-control-prev-icon {
-    background-color: var(--primary-900, #FF5042);
-}
-
-.carousel-control-next-icon {
-    background-color: var(--primary-900, #FF5042);
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+    color: #FF5042;
 }
 
 .client-img {
@@ -629,7 +623,7 @@ p {
 }
 
 .footer-social li a i {
-color: #fff;
+    color: #fff;
 
 }
 
