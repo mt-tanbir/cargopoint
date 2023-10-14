@@ -628,3 +628,55 @@ p {
 }
 
 /* Footer Section End */
+
+
+
+/* =========================================================================================About Us CSS Start========================================================================================== */
+.header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.banner-bg {
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0%);
+}
+
+.banner-content p {
+    color: var(--primary-900, #FF5042);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.banner-content h2 {
+    color: #000;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.9px;
+}
+
+.banner-content .bottom-border {
+    width: 134px;
+    height: 4px;
+    border-top: none;
+    opacity: unset;
+    background-color: #FF5042;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
