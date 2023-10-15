@@ -210,7 +210,7 @@ p {
     padding: 30px;
 }
 
-.single-services .services-img-box {
+.single-services .services-img-box-1 {
     width: 72px;
     height: 72px;
     background: #FFF6F6;
@@ -631,7 +631,11 @@ p {
 
 
 
-/* =========================================================================================About Us CSS Start========================================================================================== */
+/* =========================================================================================About Us Page CSS Start========================================================================================== */
+
+
+
+/* Header Section Start */
 .header {
     position: absolute;
     z-index: 1;
@@ -639,6 +643,21 @@ p {
     top: 2%;
     left: 50%;
     transform: translate(-50%, 0%);
+}
+
+/* Header Section End */
+
+
+
+/* Page Banner Section Start */
+.page-banner-area {
+    height: 575px;
+}
+
+.page-banner-area .banner-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .banner-bg {
@@ -680,3 +699,46 @@ p {
     left: 50%;
     transform: translate(-50%, 0%);
 }
+
+/* Page Banner Section End */
+
+
+
+/* Logistics Section Start */
+.nav-tabs {
+    --bs-nav-tabs-border-width: none;
+}
+
+#goals {
+    border-bottom: 4px solid #FF5042;
+}
+
+#story {
+    border-bottom: 4px solid #F3F3F3;
+}
+
+.product-details-tab .nav {
+    --bs-nav-link-hover-color: none;
+}
+
+.goals-collection {
+    padding-left: 0px;
+}
+
+.goals-collection-list {
+    display: flex;
+    align-items: center;
+}
+
+.gc-icon {
+    padding-right: 8px;
+}
+
+.goals-collection-list p{
+        margin-bottom: 0rem;
+}
+
+/* Logistics Section End */
+
+
+/* =========================================================================================Services Page CSS Start========================================================================================== */
