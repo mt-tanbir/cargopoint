@@ -2,9 +2,10 @@ $(document).ready(function () {
   $('.responsive').slick({
     dots: true,
     infinite: true,
-    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
@@ -31,4 +32,10 @@ $(document).ready(function () {
       }
     ]
   });
+
+  $('.counter-number').counterUp({
+    delay: 10,
+    time: 1400
+  });
+
 });

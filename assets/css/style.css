@@ -98,18 +98,82 @@ p {
     --bs-dropdown-link-hover-bg: #FF5042;
 }
 
-.search-btn {
-    background: var(--primary-900, #FF5042);
-    border-radius: 50px;
-    width: 40px;
-    height: 38px;
-}
-
 .nav-link {
     color: var(--gray-900, #140A09);
     font-family: Syne;
     font-size: 20px;
     font-weight: 600;
+}
+
+/* Search Icon */
+.openBtn {
+    background: #FF5042;
+    border: none;
+    padding: 10px 15px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.overlay {
+    height: 30%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlay .closebtn:hover {
+    color: #FF5042;
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+.overlay input[type=text]:hover {
+    background: #fff;
+}
+
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #FF5042;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #FF5042;
 }
 
 /* Header Section End */
@@ -734,11 +798,44 @@ p {
     padding-right: 8px;
 }
 
-.goals-collection-list p{
-        margin-bottom: 0rem;
+.goals-collection-list p {
+    margin-bottom: 0rem;
 }
 
 /* Logistics Section End */
 
 
 /* =========================================================================================Services Page CSS Start========================================================================================== */
+
+.services-img-box-2 {
+    position: relative;
+}
+
+.single-services-icon {
+    position: absolute;
+    top: 174px;
+    left: 24px;
+    width: 82px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.services-icon {
+    width: 42px;
+    height: 42px;
+}
+
+.services-title {
+    text-decoration: none;
+    color: var(--gray-900, #140A09);
+    font-family: Syne;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.45px;
+}
