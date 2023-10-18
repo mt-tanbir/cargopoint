@@ -127,6 +127,11 @@ p {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+.overlay-1 {
+    height: 217%;
+    position: absolute;
+}
+
 .overlay-content {
     position: relative;
     top: 46%;
@@ -700,7 +705,7 @@ p {
 
 
 /* Header Section Start */
-.header {
+.header-2 {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -767,8 +772,6 @@ p {
 /* Page Banner Section End */
 
 
-
-/* Logistics Section Start */
 .nav-tabs {
     --bs-nav-tabs-border-width: none;
 }
@@ -801,8 +804,6 @@ p {
 .goals-collection-list p {
     margin-bottom: 0rem;
 }
-
-/* Logistics Section End */
 
 
 /* =========================================================================================Services Page CSS Start========================================================================================== */
@@ -839,3 +840,29 @@ p {
     line-height: 30px;
     letter-spacing: 0.45px;
 }
+
+
+
+/* =========================================================================================Services-details Page CSS Start========================================================================================== */
+
+.ocean-point-title {
+    color: var(--gray-900, #140A09);
+    font-family: Syne;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.54px;
+}
+
+.ocean-point-text{
+    text-align: justify;
+}
+
+.ocean-freight-details {
+    list-style-type: square;
+    color: #FF5042;
+    font-size: 26px;
+}
+
+
