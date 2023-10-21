@@ -506,13 +506,14 @@ p {
     position: relative;
 }
 
-.blog-img-box img {
-    width: 356px;
+.blog-img {
+    width: 100%;
+    height: auto;
 }
 
 .blog-img-box p {
     position: absolute;
-    bottom: -125px;
+    bottom: -114px;
     left: 25px;
     border-radius: 40px;
     background: #FFF;
@@ -855,7 +856,7 @@ p {
     letter-spacing: 0.54px;
 }
 
-.ocean-point-text{
+.ocean-point-text {
     text-align: justify;
 }
 
@@ -865,4 +866,82 @@ p {
     font-size: 26px;
 }
 
+.service-area-top {
+    display: flex;
+    align-items: center;
+}
 
+.slider-btn-box li {
+    list-style: none;
+}
+
+.slider-single-item {
+    position: relative;
+}
+
+.service-area-img {
+    display: flex;
+    justify-content: center;
+}
+
+.service-area-name {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 246px;
+    height: 62px;
+    background: #FFF;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.service-area-name-text {
+    color: var(--gray-900, #140A09);
+    font-family: Syne;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.36px;
+    margin-bottom: 0
+}
+
+/* Request Quote Form Section Start */
+.form-title-box {
+    height: 114px;
+    background: var(--primary-900, #FF5042);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-input-wrapper {
+    padding: 40px 30px;
+    border: 1px solid var(--primary-300, #FFEEEC);
+    background: #FFFAFA;
+}
+
+.form-title-box .form-title {
+    color: var(--gray-white, #FFF);
+    font-family: Syne;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.54px;
+}
+
+.form-title-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+
+
+/* Request Quote Form Section End */

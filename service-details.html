@@ -227,20 +227,285 @@
 
 
     <!-- Service Area Section Start -->
-    <div id="service-details-area" class="service-details-area">
+    <div id="service-details-area" class="service-details-area section">
         <div class="service-details-area-box">
             <div class="container">
-                <div class="row">
-                    <h2 class="section-title">Service Areas</h2>
-                    <ul class="slider-btn-box">
-                        <li id="service-area-prev-1" class="prev"><i class="fa-solid fa-chevron-left"></i></li>
-                        <li id="service-area-next-1" class="next"><i class="fa-solid fa-chevron-right"></i></li>
-                    </ul>
+                <div class="row pb-4">
+                    <div class="service-area-top">
+                        <h2 class="section-title">Service Areas</h2>
+                        <ul class="slider-btn-box d-flex">
+                            <li id="service-area-prev-1" class="prev"><i class="fa-solid fa-chevron-left"></i></li>
+                            <li id="service-area-next-1" class="next"><i class="fa-solid fa-chevron-right"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="slider-inne service-area-slider">
+                    <div class="slider-single-item">
+                        <div class="service-area-img">
+                            <img class="img-fluid" src="assets/images/service-area-1.jpg" alt="service-area-img">
+                        </div>
+                        <div class="service-area-name">
+                            <p class="service-area-name-text">Shanghai, China</p>
+                        </div>
+                    </div>
+                    <div class="slider-single-item">
+                        <div class="service-area-img">
+                            <img class="img-fluid" src="assets/images/service-area-2.jpg" alt="service-area-img">
+                        </div>
+                        <div class="service-area-name">
+                            <p class="service-area-name-text">Singapore</p>
+                        </div>
+                    </div>
+                    <div class="slider-single-item">
+                        <div class="service-area-img">
+                            <img class="img-fluid" src="assets/images/service-area-3.jpg" alt="service-area-img">
+                        </div>
+                        <div class="service-area-name">
+                            <p class="service-area-name-text">Jebel Ali, Dubai</p>
+                        </div>
+                    </div>
+                    <div class="slider-single-item">
+                        <div class="service-area-img">
+                            <img class="img-fluid" src="assets/images/service-area-4.jpg" alt="service-area-img">
+                        </div>
+                        <div class="service-area-name">
+                            <p class="service-area-name-text">Port Klang</p>
+                        </div>
+                    </div>
+                    <div class="slider-single-item">
+                        <div class="service-area-img">
+                            <img class="img-fluid" src="assets/images/service-area-1.jpg" alt="service-area-img">
+                        </div>
+                        <div class="service-area-name">
+                            <p class="service-area-name-text">Shanghai, China</p>
+                        </div>
+                    </div>
+                    <div class="slider-single-item">
+                        <div class="service-area-img">
+                            <img class="img-fluid" src="assets/images/service-area-2.jpg" alt="service-area-img">
+                        </div>
+                        <div class="service-area-name">
+                            <p class="service-area-name-text">Singapore</p>
+                        </div>
+                    </div>
+                    <div class="slider-single-item">
+                        <div class="service-area-img">
+                            <img class="img-fluid" src="assets/images/service-area-3.jpg" alt="service-area-img">
+                        </div>
+                        <div class="service-area-name">
+                            <p class="service-area-name-text">Jebel Ali, Dubai</p>
+                        </div>
+                    </div>
+                    <div class="slider-single-item">
+                        <div class="service-area-img">
+                            <img class="img-fluid" src="assets/images/service-area-4.jpg" alt="service-area-img">
+                        </div>
+                        <div class="service-area-name">
+                            <p class="service-area-name-text">Port Klang</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Service Areas Section End -->
+
+
+
+    <!-- Request Quote Form Section Start -->
+    <div id="request-quote" class="request-quote">
+        <div class="request-quote-area">
+            <div class="container">
+                <div class="cargo-form" id="request-quote-form">
+                    <div class="row">
+                        <div class="form-title-box">
+                            <h3 class="form-title">Request a Quote</h3>
+                            <div class="form-title-icon">
+                                <img src="assets/images/icons/box.svg" alt="box">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-input-wrapper">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-name" class="form-label">Enter Name</label>
+                                <input type="text" class="form-control" id="quote-name" placeholder="Enter Name">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-email" class="form-label">Enter Email</label>
+                                <input type="email" class="form-control" id="quote-email" placeholder="Enter Email">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-number" class="form-label">Enter Number</label>
+                                <input type="text" class="form-control" id="quote-number" placeholder="Enter Number">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-depart-city" class="form-label">Depart City</label>
+                                <input type="text" class="form-control" id="quote-depart-city"
+                                    placeholder="Enter Depart City">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-delivery-city" class="form-label">Delivery City</label>
+                                <input type="text" class="form-control" id="quote-delivery-city"
+                                    placeholder="Enter Delivery City">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label class="form-label">Freight Type</label>
+                                <select class="form-select" aria-label="quote-select">
+                                    <option selected>Road Freight</option>
+                                    <option value="1">Demo 1</option>
+                                    <option value="2">Demo 2</option>
+                                    <option value="3">Demo 3</option>
+                                    <option value="4">Demo 4</option>
+                                    <option value="5">Demo 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-weight" class="form-label">Enter Weight</label>
+                                <input type="text" class="form-control" id="quote-weight" placeholder="Enter Weight">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-height" class="form-label">Enter Height</label>
+                                <input type="text" class="form-control" id="quote-height" placeholder="Enter Height">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-length" class="form-label">Enter Length</label>
+                                <input type="text" class="form-control" id="quote-length" placeholder="Enter Length">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-checkbox-wrapper">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="delivery"
+                                        id="quote-express-delivery">
+                                    <label class="form-check-label" for="quote-express-delivery">
+                                        Express Delivery
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="insurance"
+                                        id="quote-insurance">
+                                    <label class="form-check-label" for="quote-insurance">
+                                        Insurance
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="fragile" id="quote-fragile">
+                                    <label class="form-check-label" for="quote-fragile">
+                                        Fragile
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="packaging"
+                                        id="quote-packaging">
+                                    <label class="form-check-label" for="quote-packaging">
+                                        Packaging
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-orange mt-8" type="submit">Request Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Request Quote Form Section End -->
+
+
+
+    <!-- Subscribe Section Start -->
+    <div class="subscribe">
+        <div class="subscribe-area">
+            <div class="container">
+                <div class="subscribe-area-box ">
+                    <img class="subscribe-bg img-fluid" src="assets/images/subsciption-bg.svg" alt="subscribe-bg">
+                    <img class="subscribe-cat" src="assets/images/subscribe-1.png" alt="subscribe-cat">
+                    <div class="subscribe-box">
+                        <div class="subscribe-content">
+                            <h2>Subscribe to our Newsletter!</h2>
+                            <div class="subscribe-form-box d-flex">
+                                <input class="form-control" type="text" placeholder="Email address">
+                                <button class="btn btn-dark d-flex d-md-block">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe Section End -->
+
+
+
+    <!-- Footer Section Start -->
+    <footer id="footer" class="footer">
+        <div class="footer-area">
+            <div class="container">
+                <div class="row footer-middle">
+                    <div class="col-lg-6 mb-8">
+                        <div class="footer-content">
+                            <div class="footer-logo">
+                                <img src="assets/images/icons/logo-light.svg" alt="logo">
+                            </div>
+                            <div class="footer-address d-flex py-4">
+                                <div class="location-icon">
+                                    <img src="assets/images/icons/location.svg" alt="location">
+                                </div>
+                                <p>123 Main Street, Anytown, USA</p>
+                            </div>
+                            <div class="quick-contact">
+                                <p>Quick Contact</p>
+                                <h2 class="footer-phone">Phone: 555-123-4567</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xxl-3 mb-8">
+                        <div class="footer-menu">
+                            <h2 class="menu-category">Quick Links</h2>
+                            <ul class="footer-menu-list">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="#">Track Your Shipment</a></li>
+                                <li><a href="quote.html">Get a Quote</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xxl-3">
+                        <div class="footer-menu">
+                            <h2 class="menu-category">Support</h2>
+                            <ul class="footer-menu-list">
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="footer-devider"></div>
+                <div class="footer-bottom d-flex justify-content-between">
+                    <p class="footer-copyright">&copy; 2023 by UiBarn, All rights reserved.</p>
+                    <ul class="footer-social d-flex">
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/?original_referer="><i
+                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
 
 
 
