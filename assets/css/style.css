@@ -970,10 +970,7 @@ p {
     width: 100%;
 }
 
-.form-input-wrapper .form-select {
-    border-radius: 0%;
-    padding: 1.375rem 1.75rem;
-}
+
 
 .form-check {
     padding-right: 40px;
@@ -1168,10 +1165,176 @@ p {
 }
 
 /* leading Logistic Service Section Staart */
-.leading-ls-area{
+.leading-ls-area {
     margin-bottom: 200px;
-    
 }
 
-
 /* leading Logistic Service Section End */
+
+
+
+/* =========================================================================================Service Process CSS Start========================================================================================== */
+.service-proces-collection {
+    padding-left: 0px;
+}
+
+.process-list {
+    display: flex;
+}
+
+.service-proces-icon {
+    width: 90px;
+    height: 90px;
+    background: #FFF6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.service-proces-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.service-proces-content p {
+    margin-bottom: 0px;
+}
+
+.process-devider {
+    width: 2px;
+    height: 34px;
+    background: #ff5042;
+    margin: 10px 0;
+    margin-left: 45px;
+    position: relative;
+}
+
+.process-devider::after {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #FF5042;
+    border-radius: 50%;
+    content: "";
+    left: -2px;
+    top: -3px;
+}
+
+.process-devider::before {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #FF5042;
+    border-radius: 50%;
+    content: "";
+    left: -2px;
+    bottom: -3px;
+}
+
+.ip-content-title {
+    color: var(--neutrals-2, #23262F);
+    font-family: Syne;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.54px;
+}
+
+.ip-text {
+    color: var(--gray-700, #433B3A);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.recent-services {
+    margin-bottom: 200px;
+}
+
+.single-service {
+    background: #FFF6F6;
+    padding: 30px;
+}
+
+.single-service-icon {
+    width: 82px;
+    height: 82px;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.service-title {
+    color: var(--gray-900, #140A09);
+    font-family: Syne;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0.45px;
+}
+
+.all-services-btn .btn {
+    padding: 16px 30px;
+}
+
+/* =========================================================================================Service Process CSS End========================================================================================== */
+
+/* =========================================================================================FAQ CSS Start========================================================================================== */
+.accordion {
+    border: 1px solid var(--primary-300, #FFEEEC);
+    background: var(--gray-white, #FFF);
+    color: var(--gray-900, #051036);
+    padding: 25px;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+    font-family: Syne;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.accordion-content {
+    margin-bottom: 24px;
+}
+
+.active.accordion:enabled {
+    background: var(--primary-200, #FFF6F6);
+}
+
+.accordion:after {
+    content: '\002B';
+    font-size: 36px;
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion .active:after {
+    content: "\2212";
+    font-size: 36px;
+}
+
+.panel {
+    padding-left: 66px;
+    background: var(--primary-200, #FFF6F6);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.request-quote{
+    margin-bottom: 200px;
+}
+/* =========================================================================================FAQ CSS End========================================================================================== */
