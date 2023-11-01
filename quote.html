@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargopoint | Quote</title>
+
+    <!-- Syne Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Inter Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header id="header" class="header-2">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg py-4">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <div class="header-logo">
+                                <img src="assets/images/icons/logo.svg" alt="logo">
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link active dropdown-toggle" aria-current="page" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Home
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Home 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                        <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+                                        <li><a class="dropdown-item" href="partner.html">Partner</a></li>
+                                        <li><a class="dropdown-item" href="quote.html">Quote</a></li>
+                                        <li><a class="dropdown-item" href="service-details.html">Service Details</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="service-process.html">Service Process</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="team.html">Team</a></li>
+                                        <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                                        <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                        <li><a class="dropdown-item" href="error-404.html">Error Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Serarch Icon -->
+                        <div id="myOverlay" class="overlay overlay-1">
+                            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                            <div class="overlay-content">
+                                <form>
+                                    <input type="text" placeholder="Search Here..." name="search">
+                                    <button type="submit"><i class="fa-solid fa-magnifying-glass"
+                                            style="color: #ffffff;"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <button class="openBtn" onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #ffffff;"></i></button>
+                        <script>
+                            function openSearch() {
+                                document.getElementById("myOverlay").style.display = "block";
+                            }
+
+                            function closeSearch() {
+                                document.getElementById("myOverlay").style.display = "none";
+                            }
+                        </script>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+
+    <!-- Page Banner Section Start -->
+    <div id="page-banner" class="page-banner">
+        <div class="page-banner-area">
+            <img src="assets/images/banner-bg.svg" alt="" class="banner-bg">
+            <div class="banner-content">
+                <p>Get a quote</p>
+                <h2>Get Immediate Quotes</h2>
+                <hr class="bottom-border">
+            </div>
+        </div>
+    </div>
+    <!-- Page Banner Section End -->
+
+
+
+    <!-- Request Quote Form Section Start -->
+    <div id="request-quote" class="request-quote">
+        <div class="request-quote-area">
+            <div class="container">
+                <div class="cargo-form" id="request-quote-form">
+                    <div class="row">
+                        <div class="form-title-box">
+                            <h3 class="form-title">Request a Quote</h3>
+                            <div class="form-title-icon">
+                                <img src="assets/images/icons/box.svg" alt="box">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-input-wrapper">
+                        <div class="row">
+                            <h4 class="mb-3">Personal Information</h4>
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-name" class="form-label">Enter Name</label>
+                                <input type="text" class="form-control" id="quote-name" placeholder="Type Here">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-email" class="form-label">Enter Email</label>
+                                <input type="email" class="form-control" id="quote-email" placeholder="Type Here">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-number" class="form-label">Enter Number</label>
+                                <input type="text" class="form-control" id="quote-number" placeholder="Type Here">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4 class="mb-3">How would you like to ship?</h4>
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-depart-city" class="form-label">Depart City</label>
+                                <input type="text" class="form-control" id="quote-depart-city" placeholder="Type Here">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-delivery-city" class="form-label">Delivery City</label>
+                                <input type="text" class="form-control" id="quote-delivery-city"
+                                    placeholder="Type Here">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label class="form-label">Freight Type</label>
+                                <select class="form-select" aria-label="quote-select">
+                                    <option selected>Road Freight</option>
+                                    <option value="1">Demo 1</option>
+                                    <option value="2">Demo 2</option>
+                                    <option value="3">Demo 3</option>
+                                    <option value="4">Demo 4</option>
+                                    <option value="5">Demo 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-weight" class="form-label">Enter Weight</label>
+                                <input type="text" class="form-control" id="quote-weight" placeholder="Type Here">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-height" class="form-label">Enter Height</label>
+                                <input type="text" class="form-control" id="quote-height" placeholder="Type Here">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <label for="quote-length" class="form-label">Enter Length</label>
+                                <input type="text" class="form-control" id="quote-length" placeholder="Type Here">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-checkbox-wrapper d-flex">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="delivery"
+                                        id="quote-express-delivery">
+                                    <label class="form-check-label" for="quote-express-delivery">
+                                        Express Delivery
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="insurance"
+                                        id="quote-insurance">
+                                    <label class="form-check-label" for="quote-insurance">
+                                        Insurance
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="fragile" id="quote-fragile">
+                                    <label class="form-check-label" for="quote-fragile">
+                                        Fragile
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="packaging"
+                                        id="quote-packaging">
+                                    <label class="form-check-label" for="quote-packaging">
+                                        Packaging
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="cost-box">
+                                <h3 class="cost-title">Total cost:</h3>
+                                <p class="cost-number">$1,400.00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-orange mt-4" type="submit">Request Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Request Quote Form Section End -->
+
+
+
+    <!-- Subscribe Section Start -->
+    <div class="subscribe">
+        <div class="subscribe-area">
+            <div class="container">
+                <div class="subscribe-area-box ">
+                    <img class="subscribe-bg img-fluid" src="assets/images/subsciption-bg.svg" alt="subscribe-bg">
+                    <img class="subscribe-cat" src="assets/images/subscribe-1.png" alt="subscribe-cat">
+                    <div class="subscribe-box">
+                        <div class="subscribe-content">
+                            <h2>Subscribe to our Newsletter!</h2>
+                            <div class="subscribe-form-box d-flex">
+                                <input class="form-control" type="text" placeholder="Email address">
+                                <button class="btn btn-dark d-flex d-md-block">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe Section End -->
+
+
+
+    <!-- Footer Section Start -->
+    <footer id="footer" class="footer">
+        <div class="footer-area">
+            <div class="container">
+                <div class="row footer-middle">
+                    <div class="col-lg-6 mb-8">
+                        <div class="footer-content">
+                            <div class="footer-logo">
+                                <img src="assets/images/icons/logo-light.svg" alt="logo">
+                            </div>
+                            <div class="footer-address d-flex py-4">
+                                <div class="location-icon">
+                                    <img src="assets/images/icons/location.svg" alt="location">
+                                </div>
+                                <p>123 Main Street, Anytown, USA</p>
+                            </div>
+                            <div class="quick-contact">
+                                <p>Quick Contact</p>
+                                <h2 class="footer-phone">Phone: 555-123-4567</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xxl-3 mb-8">
+                        <div class="footer-menu">
+                            <h2 class="menu-category">Quick Links</h2>
+                            <ul class="footer-menu-list">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="#">Track Your Shipment</a></li>
+                                <li><a href="quote.html">Get a Quote</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xxl-3">
+                        <div class="footer-menu">
+                            <h2 class="menu-category">Support</h2>
+                            <ul class="footer-menu-list">
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="footer-devider"></div>
+                <div class="footer-bottom d-flex justify-content-between">
+                    <p class="footer-copyright">&copy; 2023 by UiBarn, All rights reserved.</p>
+                    <ul class="footer-social d-flex">
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/?original_referer="><i
+                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+
+    <!-- js -->
+    <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Waypoint Js-->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+
+    <!-- Counter Up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

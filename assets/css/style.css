@@ -461,7 +461,7 @@ p {
 /* Team-Section End */
 
 /* Client Section Start */
-.client-area {
+.client-1 {
     background: var(--primary-200, #FFF6F6);
     padding-bottom: 50px;
 }
@@ -630,6 +630,10 @@ p {
     padding: 1.375rem 1.75rem;
 }
 
+.subscribe {
+    margin-top: 200px;
+}
+
 /* Subscribe Section End */
 
 
@@ -761,6 +765,7 @@ p {
     position: absolute;
     top: 30%;
     left: 50%;
+    width: 100%;
     text-align: center;
     transform: translate(-50%, 0%);
 }
@@ -1321,7 +1326,7 @@ p {
     margin-left: 5px;
 }
 
-.accordion .active:after {
+.accordion.active:after {
     content: "\2212";
     font-size: 36px;
 }
@@ -1334,7 +1339,76 @@ p {
     transition: max-height 0.2s ease-out;
 }
 
-.request-quote{
+.request-quote {
     margin-bottom: 200px;
 }
+
 /* =========================================================================================FAQ CSS End========================================================================================== */
+
+/* =========================================================================================Partner Page CSS Start========================================================================================== */
+
+.partners-title {
+    color: #000;
+    font-family: Syne;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.54px;
+    margin-bottom: 24px;
+}
+
+.single-partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    border: 1px solid var(--primary-300, #FFEEEC);
+    background: var(--primary-200, #FFF6F6);
+}
+
+/* =========================================================================================Partner Page CSS End========================================================================================== */
+
+/* =========================================================================================Testimonials Page CSS Start========================================================================================== */
+
+.single-testimonial {
+    padding: 30px;
+    background: #FFF;
+    box-shadow: 0px 12px 60px 0px rgba(44, 25, 23, 0.04);
+}
+
+
+/* =========================================================================================Testimonials Page CSS End========================================================================================== */
+
+/* =========================================================================================Quote Page CSS Start========================================================================================== */
+
+.cost-box {
+    margin: 30px 0px;
+    padding: 0px 0px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cost-title {
+    margin-bottom: 0px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.cost-number {
+    margin-bottom: 0px;
+    padding: 18px;
+    background: var(--primary-300, #FFEEEC);
+    color: #000;
+    text-align: right;
+    font-family: Syne;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.36px;
+}
+
+/* =========================================================================================Quote Page CSS End========================================================================================== */
