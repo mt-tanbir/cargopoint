@@ -87,6 +87,8 @@ p {
 .header-1 {
     border-bottom: 1px solid var(--gray-300, #E8E7E6);
     background: #FFF;
+    position: relative;
+    z-index: 1;
 }
 
 .navbar-nav .nav-link.active,
@@ -188,6 +190,7 @@ p {
 /* Hero Section Start */
 .hero-1 img {
     position: relative;
+    z-index: 0;
     width: 100%;
     height: 574px;
 }
@@ -597,7 +600,7 @@ p {
 /* Subscribe Section Start */
 .subscribe {
     position: relative;
-    margin-top: 200px;
+    margin-top: 190px;
 }
 
 .subscribe-area {
@@ -774,7 +777,7 @@ p {
     position: absolute;
     top: 30%;
     left: 50%;
-    width: 100%;
+    width: 60%;
     text-align: center;
     transform: translate(-50%, 0%);
 }
@@ -1179,9 +1182,7 @@ p {
 }
 
 /* leading Logistic Service Section Staart */
-.leading-ls-area {
-    margin-bottom: 200px;
-}
+
 
 /* leading Logistic Service Section End */
 
@@ -1348,10 +1349,6 @@ p {
     transition: max-height 0.2s ease-out;
 }
 
-.request-quote {
-    margin-bottom: 200px;
-}
-
 /* =========================================================================================FAQ CSS End========================================================================================== */
 
 /* =========================================================================================Partner Page CSS Start========================================================================================== */
@@ -1454,6 +1451,10 @@ p {
 /* =========================================================================================Contact Page CSS End========================================================================================== */
 
 /* =========================================================================================Error Page CSS Start========================================================================================== */
+.error-page-area .error-contain {
+    margin-top: 130px;
+}
+
 .error-page .error-page-content .error-title span {
     display: inline-block;
     position: relative;
@@ -1487,6 +1488,27 @@ p {
         right: 16%;
         width: 20%;
     }
+
+    .single-services-icon {
+        top: 120px;
+    }
+
+    .blog-img-box p {
+        bottom: -92px;
+    }
+
+    .hero-content {
+        transform: translate(-50%, -36%);
+    }
+
+    .service-area-name {
+        width: 200px;
+        height: 48px;
+    }
+
+    .service-area-name-text {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1509,6 +1531,12 @@ p {
         display: none;
     }
 
+    .banner-content h2 {
+        font-size: 39px;
+    }
+
+    .hero-1 img {}
+
     .truck-trace-area {
         position: unset;
         transform: translate(0);
@@ -1517,6 +1545,10 @@ p {
 
     .truck-trace .trace-wrapper::after {
         width: 0px;
+    }
+
+    .single-services-icon {
+        top: 150px;
     }
 
     .services-area {
@@ -1538,8 +1570,12 @@ p {
         line-height: 68px;
     }
 
+    .single-services-icon {
+        top: 174px;
+    }
+
     .subscribe {
-        margin-top: 100px;
+        margin-top: 150px;
     }
 
     .subscribe-content h2 {
@@ -1562,6 +1598,10 @@ p {
     .footer-area {
         padding-top: 116px;
     }
+
+    .service-details-area {
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1569,14 +1609,27 @@ p {
         height: 400px;
     }
 
+    .banner-content h2 {
+        font-size: 24px;
+        line-height: 52px;
+    }
+
     .hero-content h2 {
         font-size: 40px;
         line-height: 50px;
     }
 
+    .hero-btn .btn {
+        padding: 12px 24px;
+    }
+
     .section {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .section-top {
+        padding-top: 50px;
     }
 
     .section-bottom {
@@ -1610,55 +1663,89 @@ p {
         font-size: 46px;
     }
 
-    @media screen and (max-width: 426px) {
-        .single-trace-box .btn {
-            padding: 12px;
-        }
-
-        .single-trace-box input {
-            padding: 12px 30px;
-        }
-
-        .truck-trace .trace-wrapper .single-trace-box {
-            padding: 30px 50px;
-        }
-
-        .section-title {
-            font-size: 30px;
-            line-height: 46px;
-        }
-
-        .subscribe-content h2 {
-            font-size: 20px;
-            line-height: 26px;
-        }
+    .quick-contact h2 {
+        font-size: 24px;
     }
 
-    @media screen and (max-width: 376px) {
-        .hero-content h2 {
-            font-size: 33px;
-            line-height: 44px;
-        }
+    .subscribe {
+        margin-top: 110px;
+    }
+}
 
-        .blog-img-box p {
-            bottom: -110px;
-        }
-
-        .subscribe {
-            margin-top: 60px;
-        }
-
-        .footer-area {
-            padding-top: 86px;
-        }
+@media screen and (max-width: 426px) {
+    .hero-btn .btn {
+        padding: 8px 12px;
     }
 
-    @media screen and (max-width: 376px) {
-        .choose-area .section-top-title {
-            padding-bottom: 0px;
-        }
-
-        .team-area .section-top-title {
-            padding-bottom: 0px;
-        }
+    .single-trace-box .btn {
+        padding: 12px;
     }
+
+    .single-trace-box input {
+        padding: 12px 30px;
+    }
+
+    .truck-trace .trace-wrapper .single-trace-box {
+        padding: 30px 50px;
+    }
+
+    .section-title {
+        font-size: 30px;
+        line-height: 46px;
+    }
+
+    .subscribe-content h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .blog-img-box p {
+        bottom: -130px;
+    }
+
+    .subscribe-box {
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .hero-content h2 {
+        font-size: 33px;
+        line-height: 44px;
+    }
+
+    .blog-img-box p {
+        bottom: -110px;
+    }
+
+    .single-services-icon {
+        top: 160px;
+    }
+
+    .partners-title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .footer-area {
+        padding-top: 86px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hero-btn .btn {
+        padding: 10px 6px;
+    }
+
+    .choose-area .section-top-title {
+        padding-bottom: 0px;
+    }
+
+    .team-area .section-top-title {
+        padding-bottom: 0px;
+    }
+
+    .single-services-icon {
+        top: 150px;
+    }
+}
